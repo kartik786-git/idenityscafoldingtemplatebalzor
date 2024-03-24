@@ -7,6 +7,10 @@
 
     <main>
         <div class="top-row px-4">
+            <AuthorizeView>
+                @context.User.Identity?.Name
+            </AuthorizeView>
+
             <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
         </div>
 
